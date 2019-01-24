@@ -1,0 +1,6 @@
+.gradle/
+android-baby.iml
+app/app.iml
+app/build/
+local.properties
+.idea/
