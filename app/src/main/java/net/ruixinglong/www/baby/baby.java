@@ -2,19 +2,20 @@ package net.ruixinglong.www.baby;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-
-import com.taobao.weex.IWXRenderListener;
-import com.taobao.weex.WXSDKInstance;
-import com.taobao.weex.common.WXRenderStrategy;
-import com.taobao.weex.utils.WXFileUtils;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class baby extends AppCompatActivity {
+
+    WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_baby);
+        webView = findViewById(R.id.webView);
+        webView.loadUrl("http://www.baidu.com/");
+        webView.setWebViewClient(new WebViewClient());
     }
 
     @Override
